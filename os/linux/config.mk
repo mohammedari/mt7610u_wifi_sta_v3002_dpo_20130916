@@ -1042,6 +1042,10 @@ ifeq ($(PLATFORM),PC)
     endif
 endif
 
+ifeq ($(PLATFORM),ODROID)
+	EXTRA_CFLAGS := $(WFLAGS) 
+endif
+
 ifeq ($(PLATFORM),INTELP6)
 	EXTRA_CFLAGS := $(WFLAGS) 
 endif
